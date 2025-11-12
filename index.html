@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Génerateur de couleurs</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Génerateur de couleurs</h1>
+        <div class="color-box" id="colorBox"></div>
+        <div class="color-code" id="colorCode" onclick="copyColor()">
+            #FFFFFF
+        </div>
+
+        <div class="copied" id="copiedMessage" style="display: none;">
+            Code couleur copié !
+        </div>
+
+        <button onclick="generateColor()">Générer une couleur</button>
+        <button onclick="generateRandomColor()">Couleur aléatoire</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
