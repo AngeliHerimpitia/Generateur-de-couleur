@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Génerateur de couleurs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Génerateur de couleurs</h1>
-        <div class="color-box" id="colorBox"></div>
-        <div class="color-code" id="colorCode" onclick="copyColor()">
-            #FFFFFF
-        </div>
 
-        <div class="copied" id="copiedMessage" style="display: none;">
-            Code couleur copié !
-        </div>
+<div class="container">
+  <h1>Color Generator</h1>
 
-        <button onclick="generateColor()">Générer une couleur</button>
-        <button onclick="generateRandomColor()">Couleur aléatoire</button>
-    </div>
-    <script src="script.js"></script>
+  <div class="color-box" id="colorBox"></div>
+
+  <div class="color-code" id="colorCode">#FFFFFF</div>
+  <div class="copied" id="copiedMessage">Copié</div>
+
+  <div class="actions">
+    <button id="generateBtn">Générer</button>
+    <button id="saveBtn">Enregistrer</button>
+    <button id="clearHistoryBtn">Vider l’historique</button>
+  </div>
+
+  <div class="hex-test">
+    <input type="text" id="hexInput" placeholder="#AABBCC">
+    <button id="testHexBtn">Tester</button>
+  </div>
+
+  <h3>Historique</h3>
+  <div class="history" id="history"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
